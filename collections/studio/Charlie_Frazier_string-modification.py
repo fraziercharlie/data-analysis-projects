@@ -68,3 +68,36 @@ def modify_launchcode_string():
     modify_launchcode_string()
 
 # c) Add validation to your code to deal with user inputs that are longer than the word. In such cases, default to moving 3 characters. Also, the template literal should note the error.
+#I can't figure this one out. 
+
+def modify_string():
+
+    my_string = "LaunchCode_Data_Analyst"
+
+
+    print(f"Original string: {my_string}")
+
+
+    input_text = input("Enter the number of letters to relocate: ")
+
+
+    try:
+        number_of_letters = int(input_text)
+    except ValueError:
+        print("Invalid input; using default of 3 letters.")
+        number_of_letters = 3
+
+
+    if number_of_letters > len(my_string):
+        print(f"Input of {number_of_letters} exceeds string length of {len(my_string)}. Defaulting to 3.")
+        number_of_letters = 3
+
+
+    modified_string = my_string[number_of_letters:] + my_string[:number_of_letters]
+    
+
+    error_note = "Defaulted to 3 for excess input." if number_of_letters == 3 and int(input_text) > len(my_string) else ""
+
+    print(f"Modified string: {modified_string} {error_note}")
+
+modify_string()

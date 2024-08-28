@@ -79,25 +79,25 @@ display_cabinet_contents(cargo_hold)
 
 
 # e) Modify the code to query the user for BOTH a cabinet in cargo_hold AND a particular item. Use the in method to check if the cabinet contains the selected item, then print “Cabinet ____ DOES/DOES NOT contain ____.”
-def check_cabinet_item(cargo_hold):
-    try:
+# def check_cabinet_item(cargo_hold):
+#     try:
         
-        cabinet_index = int(input("Select a cabinet number (0-3) to view its contents: "))
+#         cabinet_index = int(input("Select a cabinet number (0-3) to view its contents: "))
         
         
-        if 0 <= cabinet_index < len(cargo_hold):
+#         if 0 <= cabinet_index < len(cargo_hold):
             
-            item = input("Enter the item you are looking for: ").strip()
+#             item = input("Enter the item you are looking for: ").strip()
             
             
-            if item in cargo_hold[cabinet_index]:
-                print(f"Cabinet {cabinet_index} DOES contain {item}.")
-            else:
-                print(f"Cabinet {cabinet_index} DOES NOT contain {item}.")
-        else:
-            print(f"Invalid cabinet number. Please select a number between 0 and {len(cargo_hold) - 1}.")
-    except ValueError:
-        print("Invalid input. Please enter a valid integer number.")
+#             if item in cargo_hold[cabinet_index]:
+#                 print(f"Cabinet {cabinet_index} DOES contain {item}.")
+#             else:
+#                 print(f"Cabinet {cabinet_index} DOES NOT contain {item}.")
+#         else:
+#             print(f"Invalid cabinet number. Please select a number between 0 and {len(cargo_hold) - 1}.")
+#     except ValueError:
+#         print("Invalid input. Please enter a valid integer number.")
 
 
-check_cabinet_item(cargo_hold)
+# check_cabinet_item(cargo_hold)
