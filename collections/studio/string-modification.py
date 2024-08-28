@@ -2,6 +2,12 @@ my_string = "LaunchCode"
 
 
 # a) Use string methods to remove the first three characters from the string and add them to the end.
+my_string = "LaunchCode"
+
+
+modified_string = my_string[3:] + my_string[:3] 
+print("Original String:", my_string)
+print("Modified String:", modified_string)
 
 
 

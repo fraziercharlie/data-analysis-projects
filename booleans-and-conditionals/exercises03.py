@@ -6,6 +6,12 @@ engine_temperature = 1200
 # 5) Implement the following checks using if/else if/else statements:
 
 # a) If fuel_level is above 20000 AND engine_temperature is at or below 2500, print "Full tank. Engines good."
+fuel_level = 21000
+engine_temperature = 2400
+engine_indicator_light = "red blinking"
+
+if fuel_level > 20000 and engine_temperature <= 2500:
+    print("Full tank. Engines good.")
 
 # b) If fuel_level is above 10000 AND engine_temperature is at or below 2500, print "Fuel level above 50%.  Engines good."
 
